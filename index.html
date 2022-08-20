@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>money calculations</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="text-center">
+    <section class="container my-5">
+        <h1 class="text-3xl font-bold text-purple-600 py-5">
+            Mo<span class="text-orange-500">oooooo</span>ney Monster
+        </h1>
+
+        <div class="grid grid-cols-2 gap-4 max-h-full">
+            <div class="my-5  ml-5">
+                <img src="images/money.png" class="w-full pl-5" alt="">
+            </div>
+            <div class="mx-auto my-5 bg-gray-200 w-3/4">
+                <div class="form-control w-full">
+                    <h1 class="text-2xl my-3 font-semibold">Income</h1>
+                    <p class="ml-auto px-5"> Income: <input class="form-control px-5 bg-gray-300 border my-2"
+                            id="income" type="text" placeholder="10000"></p>
+                    <h1 class="text-2xl my-3 font-semibold">Expenses</h1>
+                    <p class="ml-auto px-5"> Food: <input class="form-control px-5 bg-gray-300 border my-2" id="food"
+                            type="text" placeholder="3000"></p>
+                    <p class="ml-auto px-5"> Rent: <input class="form-control px-5 bg-gray-300 border my-2" id="rent"
+                            type="text" placeholder="2000"></p>
+                    <p class="ml-auto px-5">Cloth: <input class="form-control px-5 bg-gray-300 border my-2" id="clothes"
+                            type="text" placeholder="500"></p>
+
+                    <button type="button" id="calculate"
+                        class="form-control px-5 py-1 rounded bg-blue-600 text-white font-bold text-xl">Calculate</button>
+                    <h1 class="text-2xl my-3 font-semibold">Total Expenses: <span id="totalExpense">5500</span>
+                    </h1>
+                    <h1 class="text-2xl my-3 font-semibold">Balance: <span id="balance">4500</span></h1>
+                    <div clas="flex text-2xl my-3 font-semibold">
+                        Save: <input class="form-control px-5 bg-gray-300 border my-2 w-1/3" id="save" type="text"
+                            placeholder="20"><span>%</span>
+                        <button class="form-control px-3 rounded bg-blue-600 text-white font-semibold text-lg w-1/3"
+                            id="saveBtn">Save</button>
+                    </div>
+                    <h1 class="text-2xl my-3 font-semibold">Saving amount: <span id="savingAmount">2000</span></h1>
+                    <h1 class="text-2xl my-3 font-semibold">Remaninig amount: <span id="remaningAmount">2500</span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/money.js"></script>
+</body>
+
+</html>
